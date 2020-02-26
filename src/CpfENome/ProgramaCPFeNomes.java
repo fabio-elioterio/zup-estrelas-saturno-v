@@ -14,7 +14,7 @@ public class ProgramaCPFeNomes {
 		String cpf = "";
 		String cpfARemover = "";
 
-		for (int i = 0; i < 3; i++) {
+		for (int i = 0; i < 10; i++) {
 
 			System.out.println("Digte um nome:");
 			nome = teclado.nextLine();
@@ -33,7 +33,8 @@ public class ProgramaCPFeNomes {
 		cpfARemover = teclado.nextLine();
 
 		cpfENomes.remove(cpfARemover);
-
+		System.out.println("Nome removido com sucesso!");
+		
 		System.out.println("\nOs nomes restantes são:");
 		for (String nomeCPF : cpfENomes.values()) {
 			System.out.println(nomeCPF);
